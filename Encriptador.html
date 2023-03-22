@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript" src="Script_encript.js"></script>
+   <link rel="stylesheet" href="estilos.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+   <title>Texto cifrado</title>
+
+</head>
+<body>
+
+    <header>
+        <img  class= "logo" src="Vector.png" alt="logo alura" >
+    
+    </header>
+<main>
+
+    <textarea input type="Text" id="TextoEncriptado" name="" id="" cols="20" rows="10" placeholder="Ingrese texto"></textarea>
+    <textarea name="Resultado" id="textoDesencriptado" cols="20" rows="10"></textarea>
+
+</main>
+<div class="botones">
+<button type="Button" id="BotonEncriptado">Encriptar</button>
+<button type="Button" id="BotonDesncriptado">Desencriptar</button>
+<button type="Button" id="BotonCopiar" >Copiar</button> 
+</div>
+
+<div class="Texto"
+Encriptador & Desencriptador></div>
+
+</body>
+
+<div>
+    <h2 class="Información"> * Solo letras minúsculas y sin acentos *</h2>
+</div>
+
+<script>
+    var btn = document.querySelector("#BotonEncriptado");
+    btn.onclick = encriptar ;
+    
+    var btn2 = document.querySelector("#BotonDesncriptado");
+    btn2.onclick = desencriptar ;
+    
+    var btn3 = document.querySelector("#BotonCopiar");
+    btn3.onclick = copiar ;
+    
+    </script>
+
+</html>
